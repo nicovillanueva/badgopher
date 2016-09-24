@@ -1,0 +1,5 @@
+- "You got fucked" page
+- Decryption from ygf page
+- C&C
+- Notification in C&C
+- Remote decryption?
