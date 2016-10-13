@@ -11,6 +11,13 @@ In 70 lines, someone who knows shit about encryption and a little programming, c
 As of now (October 13, 2016), the screen presented to the victim is not implemented. The intention is to control the malware locally via a webserver and HTTP requests. A stub of this is coded in `web.go`. Instead, for now, it's controlled via the `main.go` file.  
 There are known bugs, and there may probably be more of them, so *use at your own risk*. Which should be needless to say, considering that you are fucking around with malware.
 
+### Running
+1. Edit the `main.go` file: Uncomment it, and set which path the thing will attack.
+2. `go run *.go`
+
+Or you could build it (`go build`) and just run the binary, but whatever.
+
+Needless to say, you need your Go environment properly set up. That's left as an exercise for the reader to figure out.
 
 ### Disclaimer
 Made with the sole purpose of learning, I take absolutely no resposibility on the misuse of this software. As "safe" as it's created to be, it's still dangerous. Use with caution. Or just don't.

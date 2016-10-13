@@ -7,7 +7,7 @@ func main() {
 	//rep.InitializeRepository()
 	//rep.RebuildRepository()
 	//rep.CreateKey()
-	//WalkPath("/home/nico/Pictures/encryptiontest", &rep)
+	//WalkPath("/home/user/Pictures/encryptiontest", &rep)
 	//DecryptAll(&rep)
 	//fmt.Println(rep.GetDaKey())
 }
