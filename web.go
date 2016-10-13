@@ -2,14 +2,9 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	//	"io/ioutil"
 	"net/http"
 )
-
-func getDaKey() []byte {
-	k, _ := ioutil.ReadFile("key.log")
-	return k
-}
 
 func encryptHandler(w http.ResponseWriter, r *http.Request) {
 	k := r.FormValue("key")
@@ -25,7 +20,7 @@ func decryptHandler(w http.ResponseWriter, r *http.Request) {
 	//WalkPath(p, []byte(k), false)
 }
 
-func launch() {
+func serve() {
 	http.HandleFunc("/encrypt", encryptHandler)
 	http.HandleFunc("/decrypt", decryptHandler)
 	http.ListenAndServe(":8080", nil)

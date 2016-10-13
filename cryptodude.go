@@ -4,13 +4,13 @@ import (
 	"crypto/aes"
 	"crypto/cipher"
 	"crypto/rand"
-	"time"
-	mr "math/rand"
 	"errors"
 	"io"
+	mr "math/rand"
+	"time"
 )
 
-func genKey() []byte {
+func GenerateAesKey() []byte {
 	var key []byte
 	r := mr.New(mr.NewSource(time.Now().UnixNano()))
 	for i := 0; i < aes.BlockSize; i++ {
